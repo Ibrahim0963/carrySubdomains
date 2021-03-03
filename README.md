@@ -1,2 +1,2 @@
 # carrySubdomains
-Just run the script easy peasy lemon squeezy :)
+Just run the script, easy peasy lemon squeezy :)
