@@ -7,7 +7,7 @@ if [ $# != 1 ]
 then
 		echo "Usage: $0 <domain> "
 else
-wget $1 2>/dev/null && cat index.html | grep 'http' | cut -d ':' -f2 | cut -d '/' -f3 | cut -d '"' -f1 | grep $1 >  subdomains.txt
+wget $1 2>/dev/null && cat index.html | grep 'http' | cut -d ':' -f2 | cut -d '/' -f3 | cut -d '"' -f1 | grep $1 |uniq >  subdomains.txt
 cat subdomains.txt
 fi
 
